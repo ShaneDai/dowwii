@@ -41,7 +41,6 @@
     header h1 {
       margin: 0 0 8px 0;
       font-size: 28px;
-      letter-spacing: 0.2px;
     }
     header p {
       margin: 0 0 24px 0;
@@ -57,7 +56,6 @@
       font-size: 18px;
       margin: 22px 0 8px 0;
     }
-    h2:first-of-type { margin-top: 0; }
     ol {
       margin: 0;
       padding-left: 22px;
@@ -88,26 +86,35 @@
       <p>本應用程式由 Dowwii（以下簡稱「我們」）開發。我們極其重視您的隱私，本政策旨在說明我們如何處理您的資訊。</p>
     </header>
 
-    <section class="card" aria-label="隱私權政策內容">
+    <section class="card">
       <ol>
         <li>
           <strong>資料在地化儲存 (Local Storage Only)</strong><br />
-          本應用程式為離線記帳工具。您所輸入的所有活動帳務資料（包含收入、支出、備註等）皆僅儲存在您裝置本機的 SQLite 資料庫中。我們沒有設置任何雲端伺服器，因此不會蒐集、上傳或儲存您的任何帳務私密資料。
+          本應用程式為離線記帳工具。您所輸入的所有活動帳務資料皆僅儲存在您裝置本機的 SQLite 資料庫中。我們不會蒐集或上傳您的帳務資料。
         </li>
         <li>
           <strong>廣告與網際網路連線</strong><br />
-          本應用程式僅在顯示 Google AdMob 廣告時需要網際網路連線。若您關閉網路，本應用程式仍可正常運作記帳功能，唯廣告將無法顯示。
+          本應用程式僅在顯示 Google AdMob 廣告時需要網際網路連線。
         </li>
         <li>
           <strong>廣告 ID (Advertising ID)</strong><br />
-          為了投放廣告並維持營運，本應用程式使用了 Google AdMob SDK。<br />
-          Android 13 規範：我們已依規定聲明 <code>com.google.android.gms.permission.AD_ID</code> 權限。<br />
-          用途：廣告 ID 僅用於廣告投放、成效衡量及防止欺詐，不與您的個人帳務資料關聯。<br />
-          控制權：您可以隨時透過裝置的「設定」&gt;「隱私權」&gt;「廣告」來重設或停用廣告 ID。
+          本應用程式使用 Google AdMob SDK 投放廣告，廣告 ID 僅用於廣告投放與成效衡量。
         </li>
         <li>
           <strong>資料刪除</strong><br />
-          由於所有資料均存在您的裝置本機，當您解除安裝本應用程式時，儲存在本機 SQLite 中的所有帳務資料將會自動一併刪除。
+          當您解除安裝本應用程式時，所有儲存在本機的資料將會一併刪除。
+        </li>
+        <li>
+          <strong>兒少性虐待及剝削 (CSAE) 防範聲明</strong><br />
+          本應用程式致力於維護安全的網路環境。我們嚴禁使用者利用本服務散佈、存儲或傳送任何涉及兒少性虐待及剝削（CSAE）之內容。<br /><br />
+          <strong>零容忍政策：</strong>
+          任何上傳、分享此類非法內容的行為，我們將立即永久停權並刪除相關資料。<br /><br />
+          <strong>舉報機制：</strong>
+          若發現任何違規行為，使用者可透過
+          <a href="mailto:shane.dai.0117@gmail.com">shane.dai.0117@gmail.com</a>
+          進行舉報，我們將於 24 小時內處理。<br /><br />
+          <strong>配合執法：</strong>
+          本服務將配合相關法律規範，於必要時將違法事證移交司法與執法機關。
         </li>
         <li>
           <strong>聯絡我們</strong><br />
@@ -116,7 +123,7 @@
         </li>
       </ol>
 
-      <div class="divider" role="separator" aria-hidden="true"></div>
+      <div class="divider"></div>
 
       <footer>
         <div>© <span id="year"></span> Dowwii. All rights reserved.</div>
